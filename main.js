@@ -3,7 +3,7 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
-const heartLikes = document.querySelectorAll('.like-glyph');
+const heartIcons = document.querySelectorAll('.like-glyph');
 
 let likeArticle = e => {
    const heart = e.target;
@@ -25,7 +25,7 @@ let likeArticle = e => {
    })
 }
 
-for (const glyph of heartLikes) {
+for (const glyph of heartIcons) {
    glyph.addEventListener("click", likeArticle);
  }
 
